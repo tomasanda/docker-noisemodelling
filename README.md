@@ -6,6 +6,13 @@ Docker image for the [NoiseModelling](https://github.com/Ifsttar/NoiseModelling)
 docker run -dt --name noisemodelling -p 9580:9580 --mount type=bind,source="$(pwd)"/data,target=/data tomasanda/noisemodelling:latest
 ```
 
+## Dockerhub
+
+In the [Dockerhub repository](https://hub.docker.com/r/tomasanda/noisemodelling) you'll find the following images/tags:
+
+- stable release tags (e.g. 3.3.1)
+- `latest`, updated from NoiseModelling Github repository
+
 ## Example `docker-compose.yml`
 
 - Create a `docker-compose.yml` and paste the content below.
