@@ -1,4 +1,5 @@
 .git
+docker-compose.yml.template
 LICENSE
 README.md
 Dockerfile

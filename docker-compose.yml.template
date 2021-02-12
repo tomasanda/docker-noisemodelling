@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  noisemodelling:
+    image: tomasanda/noisemodelling:latest
+    container_name: noisemodelling_latest
+    ports:
+      - "9580:9580"
+    volumes:
+      - type: bind
+        source: ./data
+        target: /data
+
