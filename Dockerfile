@@ -9,13 +9,13 @@ RUN apk add --no-cache wget git unzip
 
 WORKDIR /root
 
-RUN wget -q https://github.com/Ifsttar/NoiseModelling/releases/download/v3.3.1/NoiseModelling_3.3.1.zip
+RUN wget -q https://github.com/Ifsttar/NoiseModelling/releases/download/v3.3.2/NoiseModelling_3.3.2.zip
 
-RUN unzip NoiseModelling_3.3.1.zip
+RUN unzip NoiseModelling_3.3.2.zip
 
-RUN rm NoiseModelling_3.3.1.zip
+RUN rm NoiseModelling_3.3.2.zip
 
-WORKDIR /root/NoiseModelling_3.3.1
+WORKDIR /root/NoiseModelling_3.3.2
 
 RUN chmod +x ./bin/startup.sh
 
