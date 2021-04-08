@@ -1,7 +1,6 @@
 FROM alpine:3.9
 
-RUN apk update && \
-    apk upgrade 
+RUN apk update && apk upgrade
 
 RUN apk add openjdk8=8.252.09-r0
 
