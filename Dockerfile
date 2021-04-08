@@ -24,3 +24,5 @@ RUN chmod +x ./bin/startup.sh
 EXPOSE 9580
 
 CMD ["./bin/startup.sh"]
+
+
