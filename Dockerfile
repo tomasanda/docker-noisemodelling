@@ -19,6 +19,10 @@ WORKDIR /root/NoiseModelling_3.3.2
 
 RUN wget https://raw.githubusercontent.com/Nitnelav/NoiseModelling/cnossos/wps_scripts/src/main/groovy/org/noise_planet/noisemodelling/wps/Import_and_Export/Import_OSM_Pbf.groovy -P /root/NoiseModelling_3.3.2/data_dir/scripts/wps/Import_and_Export/
 
+RUN rm /root/NoiseModelling_3.3.2/data_dir/scripts/wps/Geometric_Tools/Clean_Buildings_Table.groovy
+
+RUN wget https://raw.githubusercontent.com/Ifsttar/NoiseModelling/cnossos/wps_scripts/src/main/groovy/org/noise_planet/noisemodelling/wps/Geometric_Tools/Clean_Buildings_Table.groovy -P /root/NoiseModelling_3.3.2/data_dir/scripts/wps/Geometric_Tools/
+
 RUN chmod +x ./bin/startup.sh
 
 EXPOSE 9580
