@@ -17,9 +17,9 @@ RUN rm NoiseModelling_3.4.zip
 
 WORKDIR /root/NoiseModelling_3.4
 
-RUN chmod +x ./bin/startup.sh
+RUN chmod +x ./bin/startup_linux_mac.sh
 
 EXPOSE 9580
 
-CMD ["./bin/startup.sh"]
+CMD ["./bin/startup_linux_mac.sh"]
 
