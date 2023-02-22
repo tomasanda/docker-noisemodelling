@@ -1,25 +1,21 @@
-FROM alpine:3.9
+FROM adoptopenjdk/openjdk11:x86_64-ubuntu-jre-11.0.18_10
 
-RUN apk update && \
-    apk upgrade 
+RUN apt update && apt upgrade -y
 
-RUN apk add openjdk8=8.252.09-r0
-
-RUN apk add --no-cache wget git unzip
+RUN apt install wget unzip
 
 WORKDIR /root
 
-RUN wget -q https://github.com/Ifsttar/NoiseModelling/releases/download/v3.4.4/NoiseModelling_3.4.4.zip
+RUN wget -q https://github.com/Universite-Gustave-Eiffel/NoiseModelling/releases/download/v4.0.0/NoiseModelling_4.0.0.zip
 
-RUN unzip NoiseModelling_3.4.4.zip
+RUN unzip NoiseModelling_4.0.0.zip
 
-RUN rm NoiseModelling_3.4.4.zip
+RUN rm NoiseModelling_4.0.0.zip
 
-WORKDIR /root/NoiseModelling_3.4.4
+WORKDIR /root/NoiseModelling_4.0.0
 
 RUN chmod +x ./bin/startup_linux_mac.sh
 
 EXPOSE 9580
 
 CMD ["./bin/startup_linux_mac.sh"]
-
