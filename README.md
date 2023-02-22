@@ -10,7 +10,7 @@ docker run -dt --name noisemodelling -p 9580:9580 --mount type=bind,source="$(pw
 
 In the [Dockerhub repository](https://hub.docker.com/r/tomasanda/noisemodelling) you'll find the following images/tags:
 
-- stable release tags (e.g. 3.3.1)
+- stable release tags (e.g. 4.0.3)
 - `latest`, updated from NoiseModelling Github repository
 
 ## Example `docker-compose.yml`
